@@ -1,12 +1,13 @@
 import './assets/styles/custom.scss';
 import './App.css';
+import Routes from 'Routes';
 
-const App=()=> {
+const App = () => {
   return (
     <div className="App">
-     <h1 className="bg-primary">Hello Word</h1>
+      <Routes />
     </div>
   );
-}
+};
 
 export default App;

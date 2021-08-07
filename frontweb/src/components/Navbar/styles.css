@@ -1,0 +1,35 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 68px;
+}
+
+.container-logo {
+  margin-top: 18px;
+  margin-left: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+
+@media (min-width: 576px) {
+  .main-nav {
+    width: 576px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,37 @@
+.text-movie-details {
+  margin-top: 17px;
+  margin-left: 10px;
+  width: 260px;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+.container-card-coments {
+  width: 300px;
+  height: 630px;
+  margin-left: 10px;
+  background: #6c6c6c;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .text-movie-details {
+    width: 927px;
+    height: 65px;
+    margin-top: 36px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+  }
+
+  .container-card-coments {
+    width: 1127px;
+    height: 531px;
+    margin-left: 40px;
+  }
+}
