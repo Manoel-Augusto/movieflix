@@ -32,6 +32,19 @@ input {
   border-radius: 4px;
 }
 
+.alert {
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: 16px;
+  width: 267px;
+  height: 47px;
+}
+
+.invalid-feedback{
+  text-align: center;
+ padding-top: -20px;
+}
+
 @media (min-width: 576px) {
   .container-image-main {
     display: none;
@@ -62,6 +75,19 @@ input {
     padding-left: 14px;
     margin-left: 51px;
     margin-bottom: 30px;
+  }
+
+  .alert {
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 50px;
+    width: 384px;
+    height: 47px;
+  }
+
+  .invalid-feedback{
+    text-align: center;
+   padding-top: -20px;
   }
 }
 
@@ -127,5 +153,14 @@ input {
     padding-left: 14px;
     margin-left: 30px;
     margin-bottom: 30px;
+  }
+
+  .alert {
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 30px;
+    width: 384px;
+    height: 47px;
   }
 }

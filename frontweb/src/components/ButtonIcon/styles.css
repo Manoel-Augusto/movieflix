@@ -4,7 +4,8 @@
   margin-top: 54px;
 }
 .btn-container button {
-  margin-left: 0px;
+  justify-content: center;
+  margin-left: -1px;
   width: 264px;
   border-radius: 4px;
 }
@@ -22,6 +23,18 @@
     margin-left: 51px;
     width: 384px;
     height: 66px;
+  }
+
+  .btn-container button {
+    width: 384px;
+    height: 66px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-container {
+    margin-left: 30px;
+    
   }
 
   .btn-container button {

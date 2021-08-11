@@ -1,15 +1,26 @@
 import './styles.css';
 import StarImg from '../../assets/images/star-icon.png';
-const Comments = () => {
+
+
+type Props = {
+  name: string;
+  comments:string
+};
+
+const Comments = ({ name, comments }: Props) => {
+
+
+
+
   return (
     <div className="container-comments">
       <div className="header">
         <img src={StarImg} alt="StarIcon" />
-        <h1>Maria Silva</h1>
+        <h1>{name}</h1>
       </div>
       <div className="container-text">
         <h2>
-          Gostei muito do filme. Foi muito bom mesmo. Pena que durou pouco.
+        {comments}
         </h2>
       </div>
     </div>
