@@ -40,9 +40,9 @@ input {
   height: 47px;
 }
 
-.invalid-feedback{
+.invalid-feedback {
   text-align: center;
- padding-top: -20px;
+  padding-top: -20px;
 }
 
 @media (min-width: 576px) {
@@ -85,9 +85,9 @@ input {
     height: 47px;
   }
 
-  .invalid-feedback{
+  .invalid-feedback {
     text-align: center;
-   padding-top: -20px;
+    padding-top: -20px;
   }
 }
 

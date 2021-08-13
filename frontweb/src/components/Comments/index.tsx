@@ -1,17 +1,12 @@
 import './styles.css';
 import StarImg from '../../assets/images/star-icon.png';
 
-
 type Props = {
   name: string;
-  comments:string
+  comments: string;
 };
 
 const Comments = ({ name, comments }: Props) => {
-
-
-
-
   return (
     <div className="container-comments">
       <div className="header">
@@ -19,9 +14,7 @@ const Comments = ({ name, comments }: Props) => {
         <h1>{name}</h1>
       </div>
       <div className="container-text">
-        <h2>
-        {comments}
-        </h2>
+        <h2>{comments}</h2>
       </div>
     </div>
   );

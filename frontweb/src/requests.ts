@@ -1,8 +1,7 @@
 import QueryString from 'qs';
 import axios, { AxiosRequestConfig } from 'axios';
 import { getAuthData } from 'storage';
-import history from './util/history'
-
+import history from './util/history';
 
 export const BASE_URL =
   process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
@@ -45,8 +44,6 @@ export const requestBackend = (config: AxiosRequestConfig) => {
   return axios({ ...config, baseURL: BASE_URL, headers });
 };
 
-//////////////////////////
-
 // Add a request interceptor
 axios.interceptors.request.use(
   function (config) {
@@ -63,7 +60,7 @@ axios.interceptors.response.use(
     return response;
   },
   function (error) {
-    if (error.response.status === 401||error.response.status === 403) {
+    if (error.response.status === 401 || error.response.status === 403) {
       history.push('/');
     }
 

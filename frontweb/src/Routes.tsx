@@ -1,10 +1,10 @@
-import List from 'components/ListMovies';
-import MovieDetails from 'pages/MovieDetails';
 import Navbar from 'components/Navbar';
 import Home from 'pages/Home';
-import { Router, Route, Switch} from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import history from 'util/history';
-
+import PrivateRoute from 'components/PrivateRoute';
+import ListMovies from 'components/ListMovies';
+import MovieDetails from 'pages/MovieDetails';
 
 const Routes = () => (
   <Router history={history}>
@@ -14,15 +14,27 @@ const Routes = () => (
         <Home />
       </Route>
 
-      <Route path="/movies" exact>
-        <List />
-      </Route>
+      <PrivateRoute path="/movies" exact="exact">
+        <ListMovies />
+      </PrivateRoute>
 
-      <Route path="/movies/:movieId" exact>
+      <PrivateRoute path="/movies/:movieId">
         <MovieDetails />
-      </Route>
+      </PrivateRoute>
     </Switch>
   </Router>
 );
 
 export default Routes;
+/*
+
+ <PrivateRoute path="/movies">
+        <ListMovies />
+      </PrivateRoute>
+
+
+ <PrivateRoute path="/movies/:movieId">
+        <MovieDetails />
+      </PrivateRoute>
+
+*/

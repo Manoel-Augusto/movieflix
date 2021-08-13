@@ -1,11 +1,14 @@
 import ButtonIcon from 'components/ButtonIcon';
-import { useHistory } from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
 import { ReactComponent as MainImage } from 'assets/images/main-image.svg';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
-import './styles.css';
+import { useContext, useState } from 'react';
 import { requestBackendLogin } from 'requests';
 import { getAuthData, saveAuthData } from 'storage';
+import { AuthContext } from 'AuthContext';
+import { getTokenData } from 'auth';
+
+import './styles.css';
 
 type FormData = {
   username: string;
@@ -13,7 +16,9 @@ type FormData = {
 };
 
 const LoginCard = () => {
+
   const [hasError, setHasError] = useState(false);
+  const { setAuthContextData } = useContext(AuthContext);
   const {
     register,
     handleSubmit,
@@ -27,6 +32,10 @@ const LoginCard = () => {
         const token = getAuthData().access_token;
         console.log('TOKEN GERADO: ' + token);
         setHasError(false);
+        setAuthContextData({
+          authenticated: true,
+          tokenData: getTokenData(),
+        });
         console.log('SUCESSO', response);
         history.push('/movies');
       })
