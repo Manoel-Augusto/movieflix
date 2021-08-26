@@ -3,7 +3,7 @@ import Home from 'pages/Home';
 import { Router, Route, Switch } from 'react-router-dom';
 import history from 'util/history';
 import PrivateRoute from 'components/PrivateRoute';
-import ListMovies from 'components/ListMovies';
+import ListMovies from 'components/MoviesList';
 import MovieDetails from 'pages/MovieDetails';
 
 const Routes = () => (
@@ -26,15 +26,3 @@ const Routes = () => (
 );
 
 export default Routes;
-/*
-
- <PrivateRoute path="/movies">
-        <ListMovies />
-      </PrivateRoute>
-
-
- <PrivateRoute path="/movies/:movieId">
-        <MovieDetails />
-      </PrivateRoute>
-
-*/

@@ -1,5 +1,5 @@
 import { AxiosRequestConfig } from 'axios';
-import ButtonSearch from 'components/ButtonSearch';
+import ButtonSearch from 'components/ButtonSave';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import { BASE_URL, requestBackend } from 'requests';
@@ -9,12 +9,16 @@ type UrlParams = {
   movieId: string;
 };
 
-const Search = () => {
+type Props = {
+  onCreate: Function;
+};
+const CommentsInput = ({ onCreate }: Props) => {
+  const { register, handleSubmit, setValue } = useForm<FormData>();
   const { movieId } = useParams<UrlParams>();
+
   type FormData = {
     text: string;
   };
-  const { register, handleSubmit } = useForm<FormData>();
 
   const onSubmit = (formData: FormData) => {
     const params: AxiosRequestConfig = {
@@ -27,7 +31,11 @@ const Search = () => {
         movieId: movieId,
       },
     };
-    requestBackend(params);
+
+    requestBackend(params).then(() => {
+      onCreate();
+    });
+    setValue('text', '');
   };
 
   return (
@@ -48,4 +56,4 @@ const Search = () => {
     </div>
   );
 };
-export default Search;
+export default CommentsInput;

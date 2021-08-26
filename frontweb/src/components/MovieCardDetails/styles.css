@@ -1,0 +1,53 @@
+.movie-card-details-container {
+  width: 300px;
+  margin: 20px 10px 20px 10px;
+  background: #6c6c6c;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding-bottom: 7px;
+}
+
+.movie-card-details-container img {
+  margin-left: 15px;
+  margin-top: 26px;
+  width: 260px;
+  height: 163px;
+  margin-bottom: 10px;
+}
+
+.movie-card-details-info-container {
+  margin-left: 15px;
+}
+.movie-card-details-title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.movie-card-details-year {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #ffc700;
+  margin-bottom: 2px;
+}
+
+.movie-card-details-sub-titler {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.movie-card-details-synopsis {
+  margin: 15px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+  color: #9e9e9e;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}

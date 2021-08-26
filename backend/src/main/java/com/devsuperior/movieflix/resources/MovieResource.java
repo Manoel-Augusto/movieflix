@@ -35,10 +35,10 @@ public class MovieResource {
 	}
 	
 	@GetMapping
-	public ResponseEntity<Page<MovieDTO>> findAll(
+	public ResponseEntity<Page<MovieDTO>> findAllPageReview(
 			@RequestParam(value= "genreId", defaultValue = "0") Long genreId,
 			Pageable pageable) {
-		Page<MovieDTO> list = service.findAllPaged(genreId, pageable);
+		Page<MovieDTO> list = service.findAllPagedReview(genreId, pageable);
 				
 		return ResponseEntity.ok().body(list);
 	}

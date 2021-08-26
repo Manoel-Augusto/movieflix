@@ -24,16 +24,18 @@
   height: 99px;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
+ 
 }
 
 .container-text h2 {
-  margin: 10px 28px 21px 19px;
+  margin: 10px 15px 21px 19px;
   font-weight: normal;
   font-size: 16px;
   text-align: justify;
   letter-spacing: -0.015em;
   line-height: 22px;
   color: #9e9e9e;
+  word-wrap: break-word;
 }
 
 @media (min-width: 1200px) {

@@ -4,6 +4,7 @@ import StarImg from '../../assets/images/star-icon.png';
 type Props = {
   name: string;
   comments: string;
+  
 };
 
 const Comments = ({ name, comments }: Props) => {
