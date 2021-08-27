@@ -51,3 +51,115 @@
   border: 1px solid #e1e1e1;
   border-radius: 10px;
 }
+
+@media (min-width: 576px) {
+  .movie-card-details-container {
+    width: 536px;
+    margin-left: 20px;
+  }
+
+  .movie-card-details-container img {
+    width: 505px;
+    height: 311px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-card-details-container {
+    width: 688px;
+    margin-left: 40px;
+    padding-bottom: 25px;
+  }
+
+  .movie-card-details-container img {
+    margin-left: 40px;
+    width: 608px;
+    height: 382px;
+  }
+
+  .movie-card-details-info-container {
+    margin-left: 40px;
+  }
+
+  .movie-card-details-title {
+    font-size: 36px;
+  }
+
+  .movie-card-details-year {
+    font-size: 24px;
+  }
+
+  .movie-card-details-sub-titler {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .movie-card-details-synopsis {
+    width: 608px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie-card-details-container {
+    width: 912px;
+    margin-left: 40px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .movie-card-details-container img {
+    width: 608px;
+    height: 382px;
+    margin: 40px 152px 20px 152px;
+  }
+
+  .movie-card-details-synopsis {
+    width: 832px;
+    margin-left: 40px;
+    font-size: 18px;
+    padding: 20px 30px 13px 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-card-details-container {
+    display: flex;
+    width: 1120px;
+    height: 540px;
+  }
+
+  .movie-card-details-container img {
+    width: 500px;
+    height: 315px;
+    margin: 30px 0 20px 30px;
+  }
+  .movie-card-details-title {
+    width: 500px;
+  }
+
+  .movie-card-details-synopsis {
+    width: 500px;
+    height: 293px;
+    margin-left: 40px;
+    font-size: 18px;
+    padding: 20px 40px 13px 24px;
+    margin-top: -30px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-card-details-info-container {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .movie-card-details-container {
+    margin-left: 134px;
+  }
+}

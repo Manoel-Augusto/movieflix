@@ -16,7 +16,7 @@ const MovieDetails = () => {
   const [review, setReview] = useState<Review[]>([]);
   const [movie, setMovie] = useState<Movie>();
   const { movieId } = useParams<UrlParams>();
-  const [notFoundReview, setNotFoundReview] = useState<boolean>(false);
+  const [notFoundReview] = useState<boolean>(false);
 
   const getReviews = useCallback(() => {
     requestBackend({

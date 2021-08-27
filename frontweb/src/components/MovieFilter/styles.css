@@ -52,22 +52,39 @@
   color: #ffff;
 }
 @media (min-width: 576px) {
-
   .movie-filter-container {
-   
     justify-content: flex-start;
     align-items: center;
-  
   }
 
   .movie-filter-container {
     margin-left: 30px;
-    width: 536px;
-    
+    width: 544px;
   }
 
   .genre-filter-select__control {
-   margin-left: 10px;
+    margin-left: 10px;
   }
+}
 
+@media (min-width: 768px) {
+  .movie-filter-container {
+    margin-left: 30px;
+    width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie-filter-container {
+    margin-left: 40px;
+    width: 930px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-filter-container {
+    width: 1143px;
+  }
 }

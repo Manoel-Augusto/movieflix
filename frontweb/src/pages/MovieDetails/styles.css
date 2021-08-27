@@ -1,4 +1,4 @@
-.container-card{
+.container-card {
   padding-bottom: 20px;
 }
 .container-card p {
@@ -25,7 +25,25 @@
   justify-content: center;
   font-weight: bold;
 }
+@media (min-width: 576px) {
+  .container-card-coments {
+    width: 537px;
+    margin-left: 20px;
+  }
+}
 
+@media (min-width: 768px) {
+  .container-card-coments {
+    width: 688px;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .container-card-coments {
+    width: 912px;
+    margin-left: 40px;
+  }
+}
 @media (min-width: 1200px) {
   .text-movie-details {
     width: 927px;
@@ -48,6 +66,13 @@
   .container-card p {
     display: flex;
     font-size: 20px;
-    font-weight: 550;
+    
+  }
+}
+@media (min-width: 1400px) {
+  .container-card-coments {
+    
+    margin-left: 134px;
+   
   }
 }

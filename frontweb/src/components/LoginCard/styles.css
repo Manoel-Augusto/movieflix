@@ -110,7 +110,27 @@ input {
   }
 }
 
+@media (min-width: 992px) {
+  .login-card {
+    background: #6c6c6c;
+    width: 479px;
+    height: 573px;
+  }
+}
+
 @media (min-width: 1200px) {
+  .login-card {
+    margin-top: 20px;
+  }
+  .login-card h1 {
+    margin: 10px 77px 35px 85px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+  }
   .main {
     display: flex;
     margin-left: 0px;
@@ -118,8 +138,8 @@ input {
 
   .container-image-main {
     display: unset;
-    margin-right: 300px;
-    margin-left: -380px;
+    margin-right: 400px;
+    margin-left: -400px;
   }
   .container-image-main h1 {
     margin-top: 81px;
@@ -162,5 +182,13 @@ input {
     margin-left: 30px;
     width: 384px;
     height: 47px;
+  }
+
+  @media (min-width: 1400px) {
+    .container-image-main {
+      display: unset;
+      margin-right: 500px;
+      margin-left: -480px;
+    }
   }
 }

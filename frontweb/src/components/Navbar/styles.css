@@ -29,14 +29,20 @@
 @media (min-width: 576px) {
   .main-nav {
     width: 576px;
-    height: 68px;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav {
     width: 768px;
-    height: 68px;
+  }
+  .btn-logout {
+    margin-right: 40px;
+   }
+}
+@media (min-width: 992px) {
+  .main-nav {
+    width: 992px;
   }
 }
 
@@ -44,15 +50,16 @@
   .main-nav {
     width: 1200px;
   }
-
-  .btn-logout {
-    margin-top: 19px;
-    margin-right: 10px;
-    text-transform: uppercase;
-    border: 1px solid #000000;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
+  .container-logo {
+    margin-left: 40px;
+   }
+}
+@media (min-width: 1400px) {
+  .main-nav {
+    width: 1400px;
   }
+  .btn-logout {
+   margin-right: 240px;
+  }
+  
 }
