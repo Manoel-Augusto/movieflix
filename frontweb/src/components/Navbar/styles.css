@@ -56,7 +56,7 @@
 }
 @media (min-width: 1400px) {
   .main-nav {
-    width: 1400px;
+    width: 100vw;
   }
   .btn-logout {
    margin-right: 240px;

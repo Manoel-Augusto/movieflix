@@ -21,14 +21,16 @@ button {
 @media (min-width: 992px) {
   button {
     width: 400px;
-
+    margin-left: 235px;
   }
 }
 
 @media (min-width: 1200px) {
   button {
-    width: 300px;
+    width: 450px;
     height: 50px;
     border-radius: 4px;
+    margin-left: 50px;
+  
   }
 }

@@ -10,15 +10,14 @@
   background: #6c6c6c;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-}
-.product-filter-name-container input::placeholder {
-  color: #fff;
+  color: #6c6c6c;
 }
 
-.genre-filter-select__input {
-  color: white !important;
+.css-1uccc91-singleValue {
+  color: #fff !important;
 }
-.genre-filter-select__control {
+.nre-filter-select__control {
+  font-size: 400px;
   font-size: 1em;
   letter-spacing: -0.015em;
   color: #263238;
@@ -42,11 +41,13 @@
 .movie-filter-form {
   width: 260px;
 }
+.genre-filter-select_single-value {
+  color: #ffff;
+}
 
 .genre-filter-select__value-container {
   height: 50px;
   background: #6c6c6c;
-  color: #ffff;
 }
 .genre-filter-select__single-value {
   color: #ffff;

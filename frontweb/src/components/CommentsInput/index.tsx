@@ -3,6 +3,8 @@ import ButtonSearch from 'components/ButtonSave';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import { BASE_URL, requestBackend } from 'requests';
+
+import { toast} from 'react-toastify';
 import './styles.css';
 
 type UrlParams = {
@@ -34,7 +36,10 @@ const CommentsInput = ({ onCreate }: Props) => {
 
     requestBackend(params).then(() => {
       onCreate();
-    });
+      
+      toast.info("Avaliação Efetuada !")
+    })
+    .catch(()=>{toast.error('Erro ao cadastrar a avaliação')})
     setValue('text', '');
   };
 
